@@ -15,7 +15,7 @@
     background-size: cover;
     background-position: center;
     gap: 2em;
-    
+
 }
 .wave-text {
     display: flex;
@@ -87,7 +87,7 @@
 
 .app_card {
     width: 100%;
-    max-width: 23em;
+    max-width: 30em;
     min-height: 9em;
     background-color: #fff9;
     padding: 2.5em 2em;
@@ -96,16 +96,23 @@
     border-top-right-radius: 3.8em;
     border-top-left-radius: 0;
     box-shadow: 0.3em 0.3em 0.5em #0005;
+    /* border-radius: 35% 20rem / 0px 20%; */
     background:
     linear-gradient(
-        125deg,
-        rgba(255, 255, 255, 0.531) 39%,
-        rgb(51, 56, 57) 96%
+        193deg,
+        rgba(255, 255, 255, 0.495) 39%,
+        rgb(227, 122, 17) 90%
+    ),
+    linear-gradient(
+    105deg,
+        rgba(255, 255, 255, 0.577) 9%,
+        rgba(227, 122, 17, 0.603) 90%
     );
     display: grid;
     gap: 1em;
-
 }
+
+
 
 
 .app_phrase {
@@ -114,7 +121,7 @@
     margin-right: 1.5em;
     /* color: #4c4949; */
     font-family: 'Roboto Mono', monospace;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 
 }
 
