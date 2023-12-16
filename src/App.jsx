@@ -21,14 +21,40 @@ function App() {
   return (
     <>
       <div style={objStyle} className='App'>
-        <h1 className='app_title'>Galleta de la fortuna</h1>
-        <div className='app_card'>
-          <Phrase quoteRandom={quoteRandom} />
-          <Button
+        <div className='wave-text animate__animated animate__fadeIn'>
+          <p>
+            <span>G</span>
+            <span>A</span>
+            <span>L</span>
+            <span>L</span>
+            <span>E</span>
+            <span>T</span>
+            <span>A</span>
+            <span></span>
+            <span>D</span>
+            <span>E</span>
+            <span></span>
+            <span>L</span>
+            <span>A</span>
+            </p>
+            <p>
+            <span>F</span>
+            <span>O</span>
+            <span>R</span>
+            <span>T</span>
+            <span>U</span>
+            <span>N</span>
+            <span>A</span>
+            </p>
+        </div>
+        <Button
             setQuoteRandom={setQuoteRandom}
             setPhotoRandom={setPhotoRandom}
           />
+        <div className='app_card'>
+          <Phrase quoteRandom={quoteRandom} />
         </div>
+        
 
       </div>
     </>
