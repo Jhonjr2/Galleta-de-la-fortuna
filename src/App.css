@@ -14,9 +14,9 @@
     flex-direction: column;
     background-size: cover;
     background-position: center;
-    gap: 2em;
-
+    gap: 1em;
 }
+
 .wave-text {
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@
     padding: 10px;
     color: #fff;
     margin-right: 15px;
-    font-family: sans-serif ;
+    font-family: sans-serif;
     text-shadow: 0.1em 0.2em #0002;
     width: 55%;
 
@@ -86,42 +86,18 @@
 }
 
 .app_card {
+    background-image: url(/rectangle1.png);
     width: 100%;
-    max-width: 30em;
-    min-height: 9em;
-    background-color: #fff9;
-    padding: 2.5em 2em;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 4.8em;
-    border-top-right-radius: 3.8em;
-    border-top-left-radius: 0;
-    box-shadow: 0.3em 0.3em 0.5em #0005;
-    /* border-radius: 35% 20rem / 0px 20%; */
-    background:
-    linear-gradient(
-        193deg,
-        rgba(255, 255, 255, 0.495) 39%,
-        rgb(227, 122, 17) 90%
-    ),
-    linear-gradient(
-    105deg,
-        rgba(255, 255, 255, 0.577) 9%,
-        rgba(227, 122, 17, 0.603) 90%
-    );
-    display: grid;
-    gap: 1em;
+    max-width: 40em;
+    min-height: 16.2em;
+    padding: 5em 2em;
 }
 
-
-
-
 .app_phrase {
-    line-height: 1.4;
+    line-height: 1.2;
     text-align: center;
-    margin-right: 1.5em;
-    /* color: #4c4949; */
     font-family: 'Roboto Mono', monospace;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 
 }
 
@@ -130,21 +106,47 @@
     margin-left: auto;
     margin-right: auto;
     font-size: 1.3rem;
-    border: none;
     padding: 0.4em 1.5em;
     border-radius: 0.8em;
     background-color: #F47B10;
     color: white;
+    border: 2px solid white; 
     transition: transform 100ms ease, box-shadow 100ms ease;
 }
 
 .app_btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 1em rgba(124, 104, 238, 0.871);
+    background-color: var(---primary-color);
+    transform: perspective(900px) translateY(-10%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
 }
+
+.app_btn:hover .Galleta {
+    opacity: 5;
+    transform: translate3d(0%, -30%, 100px);
+}
+
+.Galleta {
+    width: 65%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 25%;
+    object-fit: cover;
+}
+
+
 
 @media screen and (max-width: 683px) {
     .wave-text {
         width: 100%;
+    }
+
+    .app_card {
+        max-width: 30em;
+        max-height: 12em;
     }
 }

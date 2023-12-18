@@ -20,6 +20,7 @@ function App() {
 
   return (
     <>
+
       <div style={objStyle} className='App'>
         <div className='wave-text animate__animated animate__fadeIn'>
           <p>
@@ -47,18 +48,20 @@ function App() {
             <span>A</span>
             </p>
         </div>
+       
+        <div className='app_card animate__animated animate__fadeIn'>
+          <Phrase quoteRandom={quoteRandom} />
+        </div>
         <Button
             setQuoteRandom={setQuoteRandom}
             setPhotoRandom={setPhotoRandom}
           />
-        <div className='app_card'>
-          <Phrase quoteRandom={quoteRandom} />
-        </div>
         
 
       </div>
     </>
   )
+  
 }
 
 export default App
