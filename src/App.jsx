@@ -50,7 +50,12 @@ function App() {
         </div>
        
         <div className='app_card animate__animated animate__fadeIn'>
-          <Phrase quoteRandom={quoteRandom} />
+        <Phrase quoteRandom={quoteRandom} />
+        <img
+            src="/rectangle1.png" 
+            alt="rectangle"
+            className="background-image"
+          />
         </div>
         <Button
             setQuoteRandom={setQuoteRandom}
